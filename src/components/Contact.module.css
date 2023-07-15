@@ -1,0 +1,28 @@
+.contact {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #80ed99;
+}
+.phone {
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.image {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

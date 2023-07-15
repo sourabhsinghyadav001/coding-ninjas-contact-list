@@ -1,0 +1,15 @@
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.plus img {
+  width: 30px;
+  height: 30px;
+}
