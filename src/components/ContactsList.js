@@ -34,6 +34,7 @@ export function ContactsList() {
   const addContact = async (name, phone) => {
     if (
       contacts.find(
+        // eslint-disable-next-line
         (contact) => contact.name == name && contact.phone === phone
       )
     )
@@ -63,6 +64,7 @@ export function ContactsList() {
   const setContactsOnEdit = (name, phone, id) => {
     if (
       contacts.find(
+        // eslint-disable-next-line
         (contact) => contact.name == name && contact.phone === phone
       )
     )

@@ -65,7 +65,7 @@ export function Contact({ contact, onEditContact, onDeleteContact }) {
   return (
     <div className={classes.contact} key={contact.id}>
       <span className={classes.flex}>
-        <img src="/user.png" className={classes.image} />
+        <img src="/user.png" className={classes.image} alt="user" />
         {contact.name}
       </span>
       <span className={classes.phone}>
@@ -76,6 +76,7 @@ export function Contact({ contact, onEditContact, onDeleteContact }) {
               src="/ellipsis.png"
               className={classes.image}
               onClick={() => setShowMenu(true)}
+              alt="ellipsis"
             />
           ) : (
             <span className={classes.menu}>
@@ -83,16 +84,19 @@ export function Contact({ contact, onEditContact, onDeleteContact }) {
                 src="/draw.png"
                 className={classes.image}
                 onClick={() => setEditing(true)}
+                alt="edit"
               />
               <img
                 src="/bin.png"
                 className={classes.image}
                 onClick={onDelete}
+                alt="delete"
               />
               <img
                 src="/close.png"
                 className={classes.image}
                 onClick={() => setShowMenu(false)}
+                alt="close"
               />
             </span>
           )}

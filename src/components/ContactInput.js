@@ -16,12 +16,14 @@ export function ContactInput({ onClose, onSubmit, id }) {
                 event.preventDefault();
                 onSubmit(nameRef.current.value, phoneRef.current.value, id);
               }}
+              alt="add"
             ></img>
           </button>
           <img
             src="/close.png"
             onClick={onClose}
             className={classes.cursorPointer}
+            alt="close"
           ></img>
         </div>
       </form>
